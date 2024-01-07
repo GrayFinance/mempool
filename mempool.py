@@ -22,6 +22,6 @@ class Mempool:
         if network == "liquid":
             url = f"{self.__lq_url}/api/address/{address}"
         else:
-            url = f"{self.url}/api/address/{address}"
+            url = f"{self.__url}/api/address/{address}"
         
         return requests.get(url).json()
